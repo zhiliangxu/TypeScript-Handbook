@@ -25,10 +25,10 @@ An enum member is considered constant if:
     An expression is a constant enum expression if it is either:
     * numeric literal
     * reference to previously defined constant enum member (it can be defined in different enum).
-        If member is defined in the same enum it can be referenced using unqualified name.
+      If member is defined in the same enum it can be referenced using unqualified name.
     * parenthesized constant enum expression
     * `+`, `-`, `~` unary operators applied to constant enum expression
-    * `+`, `-`, `*`, `/`, `%`, `<<`, `>>`, `>>>`, `&`, `|`, `^` binary operators with constant enum expressions as operands
+    * `+`, `-`, `*`, `/`, `%`, `<<`, `>>`, `>>>`, `&`, `|`, `^` binary operators with constant enum expressions as operands  
     It is a compile time error for constant enum expressions to be evaluated to `NaN` or `Infinity`.
 
 In all other cases enum member is considered computed.
